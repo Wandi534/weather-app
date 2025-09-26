@@ -4,40 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="weather-app">
     <header>
-        <form>
-            <input type="search" placeholder="enter a city.." required />
-            <input type="submit" value="Search"/>
+        <form class="search-form">
+            <input type="search" placeholder="enter a city.." required class="search-form-input" />
+            <input type="submit" value="Search" class="search-form-button"/>
         </form>
     </header>
     <main>
-        <div>
-      <h1>Paris</h1>
-      <p>
-        tuesday 10:00, scattered clouds
+  <div class="weather-overview">
+    <div class="weather-app-info">
+      <h1 class="weather-app-city">Paris</h1>
+      <p class="weather-app-details">
+        Tuesday 10:00, scattered clouds
         <br />
-        humidity: 66%, wind: 3 km/h
+        humidity: <strong>66%</strong>, wind: <strong>3 km/h</strong>
       </p>
     </div>
-      <div>
-        ⛅ 12°C
-      </div>
-    </main>
-    <footer>
-        
-        This project was coded by
-        <a href="https://github.com/Wandi534" target="_blank">Luyanda Mahlangu</a>,
-        is
-        <a href="https://github.com/Wandi534/weather-app" target="_blank"
-          >open-sourced on GitHub</a
-        >
-        and
-        <a href="https://lulu-weather-app.netlify.app/" target="_blank"
-          >hosted on Netlify</a>
+    <div class="weather-app-temperature">
+      <span class="icon">⛅</span>
+      <span class="temp">12</span><span class="unit">°C</span>
+    </div>
+  </div>
+</main>
+
+<footer>
+    This project was coded by
+    <a href="https://github.com/Wandi534" target="_blank">Luyanda Mahlangu</a>,
+    is
+    <a href="https://github.com/Wandi534/weather-app" target="_blank">
+      open-sourced on GitHub
+    </a>
+    and
+    <a href="https://lulu-weather-app.netlify.app/" target="_blank">
+      hosted on Netlify
+    </a>
+  </footer>
+</div>
+
     </div>
 </body>
 </html>
